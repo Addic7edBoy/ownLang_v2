@@ -1,0 +1,46 @@
+print(((2*2)+4)/4+"\n")
+
+print((1==1)!=0)
+
+print("\n===============\n")
+
+array = [1,2,4,5,6,8,1,2,3,4]
+N = 10
+ 
+i = 0
+while(i < (N - 1)){
+    j = 0
+    while(j < (N - 1 - i)){
+        if(array[j] > array[j+1]){
+        	temp = array[j+1]
+        	array[j+1] = array[j]
+        	array[j] = temp
+        }
+        j = j + 1
+    }
+    i = i + 1
+}
+
+print(array)
+
+print("\n===============\n")
+
+array1 = [1,2,3,4,5,6]
+array2 = ["q","a","g","f","g","j"]
+array3 = [0,0,0,0,0,0]
+N = 6
+i = 0
+
+while(N>i){
+	a = array1[i]
+	if((a%2)==0){
+		array3[i] = array1[i] + array2[i]
+	}
+	if((a%2)==1){
+		array3[i] = array2[i] + array1[i]
+	}
+    i = i + 1
+}
+print("\n")
+print(array3)
+print("\n")
